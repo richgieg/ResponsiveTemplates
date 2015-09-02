@@ -1,0 +1,63 @@
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+    min-height: 150px;
+}
+
+header, footer {
+    background-color: gray;
+}
+
+.col1 {
+    background-color: darkblue;
+}
+
+.col2 {
+    background-color: lightblue;
+}
+
+.col3 {
+    background-color: green;
+}
+
+@media screen and (min-width: 550px) {
+    .col1 {
+        width: 50%;
+    }
+
+    .col2 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .col1 {
+        width: 33.3%;
+    }
+
+    .col2 {
+        width: 33.3%;
+    }
+
+    .col3 {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
